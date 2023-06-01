@@ -32,12 +32,10 @@ a {
     flex-wrap: wrap;
     justify-content: space-between;
     margin-top: 101px;
-
 }
 
 .top_info {
     width: 617px;
-
 }
 
 .top_video {
@@ -101,27 +99,34 @@ a {
     font-weight: 700;
     font-size: 42px;
     line-height: 55px;
-    display: flex;
-    align-items: center;
-    letter-spacing: 1;
+    letter-spacing: 0.42px;
     text-transform: uppercase;
     color: #000000;
     margin-bottom: 50px;
 }
 
-.button {
+.button,
+.service_button {
     width: 227px;
     height: 55px;
     left: 163px;
-    top: 510px;
-    background: #FF2D2D;
-    font-weight: 700;
-    font-size: 18px;
-    line-height: 34px;
+    color: #FF2D2D;
     display: flex;
     justify-content: center;
     align-items: center;
+    font-size: 18px;
+    line-height: 34px;
     letter-spacing: 1px;
+    font-weight: 700;
+}
+
+.heading_reverse {
+    color: #FFFFFF;
+    text-transform: none;
+}
+
+.button {
+    top: 510px;
     color: #FFFFFF;
 }
 
@@ -131,21 +136,10 @@ a {
 
 .service_button {
     box-sizing: border-box;
-    width: 227px;
-    height: 55px;
-    left: 163px;
     top: 1095px;
     background: rgba(0, 0, 0, 0.0001);
     border: 2px solid #FF0000;
-    color: #FF2D2D;
-    display: flex;
-    justify-content: center;
-    align-items: center;
     top: 1110px;
-    font-weight: 700;
-    font-size: 18px;
-    line-height: 34px;
-    letter-spacing: 1px;
 }
 
 .service_heading {
@@ -153,34 +147,12 @@ a {
     margin-bottom: 13px;
     font-style: italic;
     font-weight: 600;
-    font-size: 24.0692px;
+    font-size: 24px;
     line-height: 0px;
     display: flex;
     align-items: center;
-    letter-spacing: 0.271838px;
+    letter-spacing: 0.27px;
     color: #000000;
-}
-
-.service_flex {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
-    gap: 32px;
-    border-bottom: 5px solid red;
-    border-bottom: 5px solid #ECECEC;
-    padding-bottom: 98px;
-}
-
-.service-flex_content {
-    width: 538px;
-}
-
-.service-flex_info {
-    width: 609px;
-    display: flex;
-    flex-wrap: wrap;
-    column-gap: 20px;
-    row-gap: 52px;
 }
 
 .service_grid_item {
@@ -202,7 +174,6 @@ a {
     grid-template-columns: repeat(4, 1fr);
     gap: 52px 20px;
     border-bottom: 5px solid #ECECEC;
-    ;
 }
 
 .service_grid_content {
@@ -211,7 +182,257 @@ a {
     width: 538px;
 }
 
-.text {
+.text_grid {
     padding-top: 13px;
     padding-bottom: 64px;
+}
+
+.text {
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 28px;
+    color: #000000;
+}
+
+.text_width_500 {
+    width: 536px;
+    margin: 28px auto 32px;
+    text-align: center;
+}
+
+.text_width_750 {
+    width: 750px;
+}
+
+.text_small {
+    width: 450px;
+}
+
+.text_big {
+    max-width: 650px;
+}
+
+.text_reverse {
+    color: #FFFFFF;
+    ;
+}
+
+.heading_center {
+    text-align: center;
+}
+
+.line {
+    width: 134px;
+    height: 5px;
+    background: #FF2D2D;
+}
+
+.products {
+    padding-top: 105px;
+}
+
+.products__link {
+    font-style: italic;
+    font-weight: 600;
+    font-size: 22px;
+    line-height: 24px;
+    letter-spacing: 0.22px;
+    text-transform: uppercase;
+    color: #000000;
+    transition: color .3s;
+}
+
+.products__link:hover {
+    color: #FF2D2D;
+}
+
+.products__link_active {
+    color: #FF2D2D;
+}
+
+.products__line {
+    margin: auto;
+}
+
+.products__box {
+    padding-top: 86px;
+}
+
+.products__links {
+    display: flex;
+    justify-content: center;
+    gap: 64px;
+}
+
+.products__items {
+    margin-top: 58px;
+    display: flex;
+    gap: 16px;
+    flex-wrap: wrap;
+    padding-left: calc(50% - 1252px/2);
+    padding-right: calc(50% - 1252px/2);
+}
+
+products__item {
+    display: flex;
+}
+
+.meet {
+    margin-top: 132px;
+    padding-left: calc(50%-609px);
+    padding-bottom: 115px;
+    filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+}
+
+.meet__text {
+    margin-top: 34px;
+    margin-bottom: 37px;
+}
+
+.meet__line {
+    width: 129px;
+    height: 5px;
+    background-color: #FF2D2D;
+}
+
+.meet__content {
+    margin-top: 66px;
+    display: flex;
+    gap: 75px;
+}
+
+.meet__heading {
+    font-style: normal;
+    font-weight: 600;
+    font-size: 30px;
+    letter-spacing: 0.27px;
+    text-transform: uppercase;
+    color: #000000;
+    margin-bottom: 29px;
+    margin-top: 16px;
+}
+
+.meet__links {
+    display: flex;
+    gap: 28px;
+    margin-top: 45px;
+}
+
+.meet__link {
+    font-style: italic;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 24px;
+    letter-spacing: 0.9px;
+    color: #000000;
+    flex-wrap: wrap;
+}
+
+.meet__link:hover {
+    text-decoration: underline;
+}
+
+.meet__peoples {
+    display: flex;
+    gap: 18px;
+    margin-top: 58px;
+}
+
+.meet__people {
+    display: flex;
+    position: relative;
+    width: 196px;
+    height: 216px;
+    background: #FF3F40;
+    overflow: hidden;
+}
+
+.meet__people:hover .meet__name-box {
+    right: 0;
+    transition: right 0.3s;
+}
+
+.meet__name-box {
+    background: #000000;
+    mix-blend-mode: normal;
+    opacity: 0.5;
+    width: 100%;
+    padding: 10px;
+    box-sizing: border-box;
+    position: absolute;
+    bottom: 0;
+    right: -100%;
+}
+
+.meet__person-name {
+    font-style: italic;
+    font-weight: 600;
+    font-size: 18px;
+    letter-spacing: 0.16px;
+    text-transform: uppercase;
+    color: #FFFFFF;
+    text-align: center;
+}
+
+.subskribe {
+    padding-top: 151px;
+    padding-bottom: 140px;
+    background: #2C2C2C;
+    text-align: center;
+}
+
+.subskribe__text {
+    margin-top: 16px;
+    margin-bottom: 56px;
+}
+
+.subskribe__form {
+    display: flex;
+    gap: 22px;
+    justify-content: center;
+    align-items: stretch;
+}
+
+.subscribe__input {
+    width: 524px;
+    height: 82px;
+    background: #FFFFFF;
+    border-radius: 5px;
+    outline: none;
+    font-family: 'Open Sans';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 24px;
+    letter-spacing: 0.4px;
+    padding-left: 36px;
+    padding-right: 36px;
+    box-sizing: border-box;
+    color: #2C2C2C;
+}
+
+.subckribe__button {
+    background: #FF2D2D;
+    padding-left: 56px;
+    padding-right: 56px;
+    border-radius: 5px;
+    font-family: 'Open Sans';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 34px;
+    letter-spacing: 0.31px;
+    text-transform: uppercase;
+    color: #FFFFFF;
+    border: none;
+    transition: all 0.3s;
+    box-sizing: border-box;
+    border: 2px solid transparent;
+}
+
+.subckribe__button:hover {
+    background-color: #FFFFFF;
+    color: #FF2D2D;
+    border: 2px solid #FF2D2D;
 }
