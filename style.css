@@ -375,19 +375,19 @@ products__item {
     text-align: center;
 }
 
-.subskribe {
+.subscribe {
     padding-top: 151px;
     padding-bottom: 140px;
     background: #2C2C2C;
     text-align: center;
 }
 
-.subskribe__text {
+.subscribe__text {
     margin-top: 16px;
     margin-bottom: 56px;
 }
 
-.subskribe__form {
+.subscribe__form {
     display: flex;
     gap: 22px;
     justify-content: center;
@@ -412,7 +412,7 @@ products__item {
     color: #2C2C2C;
 }
 
-.subckribe__button {
+.subscribe__button {
     background: #FF2D2D;
     padding-left: 56px;
     padding-right: 56px;
@@ -431,8 +431,110 @@ products__item {
     border: 2px solid transparent;
 }
 
-.subckribe__button:hover {
+.subscribe__button:hover {
     background-color: #FFFFFF;
     color: #FF2D2D;
     border: 2px solid #FF2D2D;
+}
+
+.get__text {
+    margin-top: 45px;
+    margin-bottom: 58px;
+}
+
+.get {
+    padding-top: 104px;
+    padding-bottom: 107px;
+    padding-left: calc(50%-1250px/2);
+}
+
+.get__form {
+    width: 734px;
+    display: grid;
+    grid-row-gap: 43px;
+    grid-column-gap: 52px;
+    grid-template-columns: repeat(2, 1fr);
+}
+
+.get__input {
+    height: 69px;
+    font-family: 'Open Sans';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 28px;
+    color: #000000;
+    padding-left: 50px;
+    padding-right: 50px;
+    border: none;
+    background-color: rgba(0, 0, 0, 0.1);
+    box-sizing: border-box;
+    outline: none;
+    border-radius: 5px;
+}
+
+.get__input__text_textarea {
+    height: 252px;
+    padding-top: 32px;
+    padding-bottom: 32px;
+    resize: none;
+    grid-column: 1/-1;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
+
+.get__content {
+    display: flex;
+    padding-top: 74px;
+    gap: 104px;
+}
+
+.get__contacts {
+    background: #2D2D2D;
+    padding-left: 81px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    justify-content: center;
+    flex-grow: 1;
+
+}
+
+.get__button,
+.get__heading {
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 34px;
+    letter-spacing: 0.31px;
+    text-transform: uppercase;
+    color: #FFFFFF;
+}
+
+.get__button {
+    background: #FF3B3B;
+    font-style: normal;
+    text-align: center;
+    border-radius: 5px;
+    border: none;
+    height: 75px;
+    grid-column: 1/-1;
+    border: 2px solid transparent;
+    transition: all 0.3s;
+}
+
+.get__button:hover {
+    background-color: #FFFFFF;
+    color: #FF3B3B;
+    border: 2px solid #FF3B3B;
+}
+
+.get__heading {
+    margin-bottom: 12px;
+}
+
+.get__contact-text {
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 28px;
+    color: #FFFFFF;
+    width: 315px;
 }
