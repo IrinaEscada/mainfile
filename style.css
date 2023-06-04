@@ -110,7 +110,6 @@ a {
     width: 227px;
     height: 55px;
     left: 163px;
-    color: #FF2D2D;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -126,6 +125,7 @@ a {
 }
 
 .button {
+    background: #FF2D2D;
     top: 510px;
     color: #FFFFFF;
 }
@@ -137,6 +137,7 @@ a {
 .service_button {
     box-sizing: border-box;
     top: 1095px;
+    color: #FF2D2D;
     background: rgba(0, 0, 0, 0.0001);
     border: 2px solid #FF0000;
     top: 1110px;
