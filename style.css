@@ -26,7 +26,7 @@ a {
     padding-bottom: 110px;
 }
 
-.top_content {
+.top__content {
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
@@ -34,7 +34,7 @@ a {
     margin-top: 101px;
 }
 
-.top_info {
+.top__info {
     width: 617px;
 }
 
@@ -62,7 +62,7 @@ a {
     display: flex;
 }
 
-.menu_link {
+.menu__link {
     font-style: normal;
     font-weight: 700;
     font-size: 14px;
@@ -74,11 +74,11 @@ a {
     padding: 38px 23px 26px;
 }
 
-.menu_link:hover {
+.menu__link:hover {
     background: #FF3F40;
 }
 
-.menu_link_active {
+.menu__link_active {
     background: #FF3F40;
 }
 
@@ -106,7 +106,7 @@ a {
 }
 
 .button,
-.service_button {
+.service__button {
     width: 227px;
     height: 55px;
     left: 163px;
@@ -134,7 +134,7 @@ a {
     padding-top: 100px;
 }
 
-.service_button {
+.service__button {
     box-sizing: border-box;
     top: 1095px;
     color: #FF2D2D;
@@ -143,7 +143,7 @@ a {
     top: 1110px;
 }
 
-.service_heading {
+.service__heading {
     margin-top: 33px;
     margin-bottom: 13px;
     font-style: italic;
@@ -156,7 +156,7 @@ a {
     color: #000000;
 }
 
-.service_grid_item {
+.service__grid_item {
     flex-grow: 1;
     flex-basis: 290px;
 }
@@ -165,11 +165,11 @@ a {
     transition: transform 1s;
 }
 
-.service_grid_item:hover .service_img {
+.service__grid_item:hover .service_img {
     transform: rotate(360deg);
 }
 
-.service_grid {
+.service__grid {
     padding-bottom: 98px;
     display: grid;
     grid-template-columns: repeat(4, 1fr);
@@ -177,13 +177,13 @@ a {
     border-bottom: 5px solid #ECECEC;
 }
 
-.service_grid_content {
+.service__grid_content {
     grid-column: span 2;
     grid-row: span 2;
     width: 538px;
 }
 
-.text_grid {
+.text__grid {
     padding-top: 13px;
     padding-bottom: 64px;
 }
@@ -196,13 +196,13 @@ a {
     color: #000000;
 }
 
-.text_width_500 {
+.text__width_500 {
     width: 536px;
     margin: 28px auto 32px;
     text-align: center;
 }
 
-.text_width_750 {
+.text__width_750 {
     width: 750px;
 }
 
@@ -219,7 +219,7 @@ a {
     ;
 }
 
-.heading_center {
+.heading__center {
     text-align: center;
 }
 
@@ -336,6 +336,7 @@ products__item {
 
 .meet__peoples {
     display: flex;
+    flex-wrap: wrap;
     gap: 18px;
     margin-top: 58px;
 }
@@ -446,7 +447,7 @@ products__item {
 .get {
     padding-top: 104px;
     padding-bottom: 107px;
-    padding-left: calc(50%-1250px/2);
+    padding-left: calc(50% - 1250px/2);
 }
 
 .get__form {
@@ -487,6 +488,7 @@ products__item {
     display: flex;
     padding-top: 74px;
     gap: 104px;
+    flex-wrap: wrap;
 }
 
 .get__contacts {
@@ -497,7 +499,6 @@ products__item {
     gap: 20px;
     justify-content: center;
     flex-grow: 1;
-
 }
 
 .get__button,
@@ -538,4 +539,247 @@ products__item {
     line-height: 28px;
     color: #FFFFFF;
     width: 315px;
+}
+
+.footer {
+    padding-top: 48px;
+    padding-bottom: 32px;
+    background: #313030;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.footer__text {
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 26px;
+    color: #B8B8B8;
+}
+
+.footer__box {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    gap: 18px;
+}
+
+.footer__icon {
+    background-color: #FFFFFF;
+    width: 33px;
+    height: 33px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    transition: all 0.3s;
+}
+
+.footer__icon:hover {
+    background-color: #FF3B3B;
+}
+
+path {
+    transition: fill .3s;
+}
+
+.footer__icon:hover path {
+    fill: #FFFFFF;
+}
+
+@media (max-width:1024px) {
+
+    .center,
+    .products__items,
+    .get {
+        padding-left: calc(50% - 734px / 2);
+        padding-right: calc(50% - 734px / 2);
+    }
+
+    .top__content {
+        gap: 32px;
+        justify-content: center;
+    }
+
+    .top_video {
+        width: 100%;
+    }
+
+    .service__grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .products__items {
+        justify-content: center;
+    }
+
+    .products__links {
+        gap: 32px;
+    }
+
+    .products__link {
+        font-size: 20px;
+    }
+
+    .meet__content {
+        gap: 32px;
+        align-items: flex-end;
+    }
+
+    .meet__people {
+        width: 186px;
+        height: 190px;
+    }
+
+    .text__width_750 {
+        width: 100%;
+    }
+
+    .get {
+        padding-bottom: 32px;
+    }
+
+    .get__content {
+        gap: 32px;
+    }
+
+    .get__contacts {
+        padding-top: 64px;
+        padding-bottom: 64px;
+    }
+}
+
+@media (max-width:767px) {
+    .center {
+        padding-left: 16px;
+        padding-right: 16px;
+    }
+
+    .top {
+        position: relative;
+    }
+
+    .menu {
+        flex-direction: column;
+    }
+
+    .header {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+    }
+
+    .title {
+        font-size: 36px;
+        line-height: 42px;
+        text-align: center;
+    }
+
+    .text {
+        font-size: 14px;
+        line-height: 24px;
+    }
+
+    .text__width_500,
+    .text__width_750,
+    .text_small {
+        width: 100%;
+    }
+
+    .top_text {
+        width: 100%;
+    }
+
+    .top__info {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+    }
+
+    .top_video {
+        height: 200px;
+    }
+
+    .service__grid_content {
+        width: 100%;
+    }
+
+    .heading {
+        font-size: 32px;
+        text-align: center;
+    }
+
+    .service__grid {
+        grid-template-columns: repeat(1, 1fr);
+    }
+
+    .service__grid_content {
+        grid-column: span 1;
+        grid-row: span 1;
+        max-width: 538px;
+    }
+
+    .products__links {
+        flex-wrap: wrap;
+    }
+
+    .products {
+        padding-left: 16px;
+        padding-right: 16px;
+    }
+
+    .meet__content {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .subscribe__form {
+        flex-direction: column;
+    }
+
+    .subscribe__input,
+    .service__button {
+        width: 100%;
+        height: 62px;
+    }
+
+    .get__form {
+        width: 100%;
+        grid-row-gap: 24px;
+        grid-template-columns: repeat(1, 1fr);
+        padding-left: 16px;
+        padding-right: 16px;
+        box-sizing: border-box;
+    }
+
+    .get__text {
+        padding-left: 16px;
+        padding-right: 16px;
+        box-sizing: border-box;
+    }
+
+    .get__contacts {
+        padding-left: 32px;
+        padding-right: 32px;
+    }
+
+    .get__line {
+        margin-left: 16px;
+    }
+
+    .get__contact-text {
+        width: 100%;
+    }
+
+    .meet__people {
+        width: 156px;
+        height: 160px;
+        justify-content: center;
+    }
+
+    .footer {
+        flex-direction: column-reverse;
+        gap: 16px;
+    }
 }
