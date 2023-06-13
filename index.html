@@ -11,18 +11,21 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Home</title>
     <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/b4c2dd1ccc.js" crossorigin="anonymous"></script>
 </head>
 
 <body>
     <section class="top center">
         <header class="header">
-            <nav>
+            <i class="fa-solid fa-bars fa-2xl" style="color: #ffffff;"></i>
+            <nav class="nav">
                 <ul class="menu">
                     <li class="menu__li"><a href="" class="menu__link menu__link_active">home</a></li>
                     <li class="menu__li"><a href="" class="menu__link">portfolio</a></li>
-                    <li class="menu__li"><a href="" class="menu__link">about us</a></li>
+                    <li class="menu__li"><a href="" class="menu__link">about&nbsp; us</a></li>
                     <li class="menu__li"><a href="#" class="menu__link">contact</a></li>
                 </ul>
+                <i class="fa-solid fa-xmark fa-2xl" style="color: #ffffff;"></i>
             </nav>
         </header>
         <div class="top__content">
@@ -284,6 +287,21 @@
         let today = new Date();
         let year = today.getFullYear();
         footerYearEl.textContent = year;
+
+        const faEl = document.querySelector('.fa-bars');
+        const navEl = document.querySelector('.nav');
+
+        faEl.addEventListener('click', function (e) {
+            navEl.style.left = 0;
+        });
+
+        const closeEl = document.querySelector('.fa-xmark');
+
+
+        closeEl.addEventListener('click', function (e) {
+            navEl.style.left = '-100%';
+        });
+
     </script>
 
 </body>
