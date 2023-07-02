@@ -279,8 +279,10 @@ a {
     padding-right: calc(50% - 1252px/2);
 }
 
-products__item {
+.products__item {
     display: flex;
+    width: 293px;
+    height: 301px;
 }
 
 .meet {
@@ -327,7 +329,7 @@ products__item {
 .meet__link {
     font-style: italic;
     font-weight: 400;
-    font-size: 18px;
+    font-size: 15px;
     line-height: 24px;
     letter-spacing: 0.9px;
     color: #000000;
@@ -343,6 +345,7 @@ products__item {
     flex-wrap: wrap;
     gap: 18px;
     margin-top: 58px;
+    justify-content: center;
 }
 
 .meet__people {
@@ -350,7 +353,8 @@ products__item {
     position: relative;
     width: 196px;
     height: 216px;
-    background: #FF3F40;
+    background-image: url(img/person.jpg);
+    background-repeat: no-repeat;
     overflow: hidden;
 }
 
@@ -369,6 +373,14 @@ products__item {
     position: absolute;
     bottom: 0;
     right: -100%;
+}
+
+.meet__person {
+    width: 321px;
+    height: 458px;
+    object-fit: cover;
+    margin-top: 25px;
+
 }
 
 .meet__person-name {
@@ -653,7 +665,7 @@ path {
     }
 }
 
-@media (max-width:767px) {
+@media (max-width:800px) {
     .center {
         padding-left: 16px;
         padding-right: 16px;
@@ -667,6 +679,7 @@ path {
         height: 60px;
         display: flex;
         align-items: center;
+        justify-content: center;
     }
 
     .menu__link_active {
@@ -804,8 +817,8 @@ path {
     }
 
     .meet__people {
-        width: 156px;
-        height: 160px;
+        width: 166px;
+        height: 175px;
         justify-content: center;
     }
 
