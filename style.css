@@ -33,9 +33,9 @@ a {
 .top__content {
     display: flex;
     flex-direction: row;
-    flex-wrap: wrap;
     justify-content: space-between;
-    margin-top: 101px;
+    padding: 101px 10px 0 10px;
+    gap: 10px;
 }
 
 .top__info {
@@ -275,6 +275,7 @@ a {
     display: flex;
     gap: 16px;
     flex-wrap: wrap;
+    justify-content: center;
     padding-left: calc(50% - 1252px/2);
     padding-right: calc(50% - 1252px/2);
 }
@@ -614,6 +615,7 @@ path {
 
     .top__content {
         gap: 32px;
+        flex-wrap: wrap;
         justify-content: center;
     }
 
